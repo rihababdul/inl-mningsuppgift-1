@@ -1,0 +1,298 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-06T03:08:55.468Z",
+    "end": "2021-11-06T03:09:06.901Z",
+    "duration": 11433,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "33f69003-65af-442a-b17b-1e0c7392cdff",
+      "title": "",
+      "fullFile": "cypress/integration/test.spec.js",
+      "file": "cypress/integration/test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "59450e42-9901-4a12-b5ee-d25766c6b3e5",
+          "title": "Inloggningsfunktionen",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test case 1",
+              "fullTitle": "Inloggningsfunktionen Test case 1",
+              "timedOut": null,
+              "duration": 2142,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000');\ncy.title().should('include', 'Testers Hotel'); // Testa inloggningsfunktionen\ncy.get(':nth-child(1) > input').type('tester01');\ncy.get(':nth-child(2) > input').type('GteteqbQQgSr88SwNExUQv2ydb7xuf8c');\ncy.get('.btn').click();",
+              "err": {},
+              "uuid": "587144a5-8937-4be2-97e4-48f6e2088846",
+              "parentUUID": "59450e42-9901-4a12-b5ee-d25766c6b3e5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "699c45d7-86bd-4249-a491-7e11d5406b24",
+              "title": "Skapa en klient",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Test case 2",
+                  "fullTitle": "Inloggningsfunktionen Skapa en klient Test case 2",
+                  "timedOut": null,
+                  "duration": 2607,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('.blocks > :nth-child(2) > .btn').click();\ncy.get('h2 > .btn').click();\ncy.get(':nth-child(1) > input').type('testName');\ncy.get(':nth-child(2) > input').type('test@test.com');\ncy.get(':nth-child(3) > input').type('0123456789');\ncy.get('.blue').click();",
+                  "err": {},
+                  "uuid": "83846e1e-85f6-457c-8b4f-284804a13baf",
+                  "parentUUID": "699c45d7-86bd-4249-a491-7e11d5406b24",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [
+                {
+                  "uuid": "5016d833-1a16-4a76-9a0f-5db3aab19829",
+                  "title": "Redigera uppgifter på en klient",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Test case 3",
+                      "fullTitle": "Inloggningsfunktionen Skapa en klient Redigera uppgifter på en klient Test case 3",
+                      "timedOut": null,
+                      "duration": 1591,
+                      "state": "passed",
+                      "speed": "fast",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "cy.contains('Clients');\ncy.get(':nth-child(1) > .action > img').click();\ncy.get('.menu > :nth-child(1)').click();\ncy.get(':nth-child(5) > input').type('5');\ncy.get('.blue').click(); //cy.contains('Jonas Hellman')\n//cy.get(':nth-child(2) > .action > img').click()\n//cy.get('.menu > :nth-child(1)').click()\n//cy.get(':nth-child(5) > input').type('5')",
+                      "err": {},
+                      "uuid": "c787c97b-4b2a-4c18-a416-0814f326eb50",
+                      "parentUUID": "5016d833-1a16-4a76-9a0f-5db3aab19829",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "c787c97b-4b2a-4c18-a416-0814f326eb50"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 1591,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [
+                "83846e1e-85f6-457c-8b4f-284804a13baf"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 2607,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "2cda3077-dc15-44f9-b590-dd7a793d335f",
+              "title": "Radera en klient",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Test case 4",
+                  "fullTitle": "Inloggningsfunktionen Radera en klient Test case 4",
+                  "timedOut": null,
+                  "duration": 1036,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(':nth-child(3) > .action > img').click();\ncy.get('.menu > :nth-child(2)').click();\ncy.get(':nth-child(3) > .btn').click();",
+                  "err": {},
+                  "uuid": "2cc58911-85a2-4854-96bd-f4212f98e482",
+                  "parentUUID": "2cda3077-dc15-44f9-b590-dd7a793d335f",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "2cc58911-85a2-4854-96bd-f4212f98e482"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1036,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "d95c09c0-b082-47f2-a7fe-66480d1439bc",
+              "title": "Lägg till en ny räkning",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Test case 5",
+                  "fullTitle": "Inloggningsfunktionen Lägg till en ny räkning Test case 5",
+                  "timedOut": null,
+                  "duration": 1007,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(':nth-child(3) > .btn').click();\ncy.get('h2 > .btn').click();\ncy.contains(\"New Bill\");\ncy.get('input').type('1000');\ncy.get('.blue').click();",
+                  "err": {},
+                  "uuid": "13a56769-d312-44f8-9d15-f87e2ac65809",
+                  "parentUUID": "d95c09c0-b082-47f2-a7fe-66480d1439bc",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [
+                {
+                  "uuid": "f2113787-0b9d-4291-a253-1484b7db61e3",
+                  "title": "Redigera räkning från obetald till betald",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Test case 6",
+                      "fullTitle": "Inloggningsfunktionen Lägg till en ny räkning Redigera räkning från obetald till betald Test case 6",
+                      "timedOut": null,
+                      "duration": 857,
+                      "state": "passed",
+                      "speed": "fast",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "cy.get(':nth-child(2) > .action').click();\ncy.get('.menu > :nth-child(1)').click();\ncy.get('.checkbox').click();\ncy.get('.blue').click();",
+                      "err": {},
+                      "uuid": "8079e6b4-c0b3-4e50-a997-37f446fe32e9",
+                      "parentUUID": "f2113787-0b9d-4291-a253-1484b7db61e3",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "8079e6b4-c0b3-4e50-a997-37f446fe32e9"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 857,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [
+                "13a56769-d312-44f8-9d15-f87e2ac65809"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1007,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "587144a5-8937-4be2-97e4-48f6e2088846"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2142,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.0.1"
+    }
+  }
+}

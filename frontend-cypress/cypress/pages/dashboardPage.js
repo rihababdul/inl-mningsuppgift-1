@@ -5,13 +5,13 @@
 const inputUsername = ':nth-child(1) > input'
 const inputPassword = ':nth-child(2) > input'
 const loginButton = '.blue'
-const viewButton = '.blocks > :nth-child(2) > .btn'
+const viewButtonClients = '.blocks > :nth-child(2) > .btn'
 const createButton = 'h2 > .btn'
 const inputClientName = ':nth-child(1) > input'
 const inputEmail = ':nth-child(2) > input'
 const inputPhoneNumber = ':nth-child(3) > input'
 const saveButton = '.blue'
-const editbtn = ':nth-child(1) > .action > img'
+const editBtn = ':nth-child(1) > .action > img'
 const editButton = '.menu > :nth-child(1)'
 const editInput = ':nth-child(5) > input'
 const deleteBtn = ':nth-child(3) > .action > img'
@@ -34,7 +34,7 @@ function loginUser(cy, username, password, contentToConfirm){
   }
 
  function createClient(cy){
-    cy.get(viewButton).click()
+    cy.get(viewButtonClients).click()
     cy.get(createButton).click()
     cy.get(inputClientName).type('testname')
     cy.get(inputEmail).type('test@test.com')
@@ -48,7 +48,8 @@ function loginUser(cy, username, password, contentToConfirm){
 
 
 function editClient(cy){  
-cy.get(editbtn).click()
+cy.get(viewButtonClients).click()    
+cy.get(editBtn).click()
 cy.get(editButton).click()
 cy.get(editInput).type('5')
 cy.get(saveButton).click()

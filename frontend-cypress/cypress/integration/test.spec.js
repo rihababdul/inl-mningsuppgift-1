@@ -42,7 +42,7 @@ describe('Inloggningsfunktionen', function(){
         //cy.get('.menu > :nth-child(1)').click()
         //cy.get(':nth-child(5) > input').type('5')
 
-        
+        // :nth-child(1) > .action > img
 
         })
 
